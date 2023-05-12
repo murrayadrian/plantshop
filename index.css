@@ -227,3 +227,32 @@ body {
     background-color: #C1DCDC;
     height: auto;
   }
+  .link{
+    display: flex;
+    justify-content: space-between;
+  }
+  .media-icons{
+    display: flex;
+    justify-content: start;
+  }
+  .media-icons a{
+    margin: 0 4px;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: #C1DCDC;
+    color: black;
+  }
+  th,td{
+    padding: 20px;
+    text-align: left;
+  }
+  table a{
+    text-decoration: none;
+    color:black;
+  }
