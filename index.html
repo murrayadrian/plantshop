@@ -50,6 +50,9 @@ li {
   height: 10em;
   margin-bottom: 1em;
 }
+.banner{
+  margin: 50px 96px;
+}
 .header {
   display: flex;
   align-items: center;
@@ -70,7 +73,6 @@ li {
   flex-direction: row;
   justify-content: space-between;
   height: 512px;
-  margin: 50px 96px;
   background-color: #C1DCDC;
 }
 .right img{
@@ -111,7 +113,43 @@ input{
 .right{
   margin: 18px 56px 19px 0px;
 }
-
+.sec2{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+}
+.intro{
+  width:20%;
+  text-align: center;
+}
+.product-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product{
+  width:33.33%;
+  margin-bottom:45px;
+}
+.product img{
+  width:300px;
+  height:360px;
+  border-radius: 12px;
+  margin-bottom:10px;
+}
+.product-name{
+  margin-bottom:10px;
+  color: #1E1E1E;
+  font-size: 18px;
+  font-weight: 500;
+}
+.sec3{
+  text-align: center;
+  height:auto;
+  background-color: #FFFFFF;
+}
   </style>
 </head>
 <body>
@@ -152,11 +190,48 @@ input{
           <img src="img2.png" alt="">
         </div>
       </div>
-      <div class="banner">
-        <p>Best Seller</p>
+      <div class="banner sec2">
+        <div class="intro">
+          <h2>Best Selling Plants</h2>
+          <p>Easiest way to healthy life by buying your favorite plants </p>
+          <button>See more</button>
+        </div>
+        <div class="product-list">
+          <div class="product">
+            <img src="i1.png" alt="">
+            <div class="product-name">Natural Plants</div>
+            <div class="product-price">140.000đ</div>
+          </div>
+          <div class="product">
+            <img src="i2.png" alt="">
+            <div class="product-name">Artificial Plants</div>
+            <div class="product-price">900.000đ</div>
+          </div>
+          <div class="product">
+            <img src="i3.png" alt="">
+            <div class="product-name">Artificial Plants</div>
+            <div class="product-price">35.000đ</div>
+          </div>
+          <div class="product">
+            <img src="i4.png" alt="">
+            <div class="product-name">Natural Plants</div>
+            <div class="product-price">140.000d</div>
+          </div>
+          <div class="product">
+            <img src="i5.png" alt="">
+            <div class="product-name">Natural Plants</div>
+            <div class="product-price">140.000d</div>
+          </div>
+          <div class="product">
+            <img src="i6.png" alt="">
+            <div class="product-name">Natural Plants</div>
+            <div class="product-price">140.000d</div>
+          </div>
+        </div>
       </div>
-      <div class="banner">
-        <p>About Us</p>
+      <div class="banner sec3">
+        <h2>About Us</h2>
+        <p>Order now and appreciate the beauty of nature</p>
       </div>
       <div class="banner">
         <p>Categories</p>
