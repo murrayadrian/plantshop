@@ -4,240 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <title>Plant Shop</title>
-  <style>
-body {
-  margin: 0 auto;
-  background-color: lightgrey;
-}
-.wrapper {
-  background-color: white;
-  padding: 30px 70px;
-}
-
-ul {
-  text-align: center;
-}
-#content {
-  overflow: auto;
-}
-
-.column1, .column2, .column3 {
-  width: 31.3%;
-  float: left;
-}
-
-.column1 {
-  float: left;
-}
-.column2 {
-  margin: 0% 3%;
-}
-.column3 {
-  float: right;
-  margin: 0%;
-}
-
-li {
-  display: inline;
-  padding: 0.5em;
-}
-
-.banner, .article {
-  background-color: #efefef;
-  height: 10em;
-  margin-bottom: 1em;
-}
-.banner{
-  margin: 50px 96px;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px 80px;
-}
-.left-mid{
-  display: flex;
-  flex-direction: row;
-  gap:60px;
-}
-.left {
-  margin: 48px 0px 125px 48px;
-}
-
-.sec1{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 512px;
-  background-color: #C1DCDC;
-}
-.right img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.nav {
-  list-style: none;
-}
-.nav a {
-  text-decoration: none;
-}
-.nav .logo{
-  margin-right: 80px;
-  font-size: 24px;
-  font-weight: 400;
-}
-h1{
-  font-size: 64px;
-  font-weight: 800;
-}
-.search-bar{
-  width:60%;
-  position:relative;
-}
-input{
-  width:100%;
-  height: 30px;
-  border-radius: 5px;
-  margin-top:10px;
-}
-.search-bar i{
-  position: absolute;
-  right: 0px;
-  top:19px;
-}
-.right{
-  margin: 18px 56px 19px 0px;
-}
-.sec2{
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #FFFFFF;
-}
-.intro{
-  width:20%;
-  text-align: center;
-}
-.product-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.product{
-  width:33.33%;
-  margin-bottom:45px;
-}
-.product img{
-  width:300px;
-  height:360px;
-  border-radius: 12px;
-  margin-bottom:10px;
-}
-.product-name{
-  margin-bottom:10px;
-  color: #1E1E1E;
-  font-size: 18px;
-  font-weight: 500;
-}
-.sec3, .sec4{
-  text-align: center;
-  height:auto;
-  background-color: #FFFFFF;
-}
-.about-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.about{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 130px;
-}
-.about-img{
-  width:96px;
-  height: 96px;
-  border-radius: 50%;
-  background-color: #C1DCDC;
-}
-.about-img img{
-  width:40px;
-  height: 40px;
-  line-height: 40px;
-}
-h3{
-  color: #1E1E1E;
-  font-weight: 700;
-  font-size: 32px;
-}
-.categories h3{
-  font-size: 14px;
-}
-.sec4 p{
-  margin-bottom:10px;
-}
-.category-container{
-  background-color: #C1DCDC;
-  padding-bottom:15px;
-}
-.categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top:100px;
-}
-.categories :last-child, .categories :first-child{
-  transform: translateY(-30px);
-}
-.category-bottom{
-  transform: translateY(-50px);
-}
-.sec5{
-  background-color: #FFFFFF;
-  height: auto;
-  padding: 96px;
-}
-.card-list {
-  display: flex;
-  justify-content: start;
-  gap: 20px;
-}
-.card{
-  background-color: #C1DCDC;
-}
-.review{
-  display: flex;
-  justify-content: start;
-}
-.review img{
-  padding-left: 5px;
-}
-.reviewer-info{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-self: center;
-}
-.star{
-  align-items: center;
-  padding-top:15px;
-}
-.title{
-  padding-left: 48px;
-  top:48px;
-}
-footer{
-  background-color: #C1DCDC;
-  height: auto;
-}
-  </style>
 </head>
 <body>
   <div class="wrapper">
@@ -274,7 +43,7 @@ footer{
           </div>
         </div>
         <div class="right">
-          <img src="img2.png" alt="">
+          <img src="./img/img2.png" alt="">
         </div>
       </div>
       <div class="banner sec2">
@@ -285,32 +54,32 @@ footer{
         </div>
         <div class="product-list">
           <div class="product">
-            <img src="i1.png" alt="">
+            <img src="./img/i1.png" alt="">
             <div class="product-name">Natural Plants</div>
             <div class="product-price">140.000đ</div>
           </div>
           <div class="product">
-            <img src="i2.png" alt="">
+            <img src="./img/i2.png" alt="">
             <div class="product-name">Artificial Plants</div>
             <div class="product-price">900.000đ</div>
           </div>
           <div class="product">
-            <img src="i3.png" alt="">
+            <img src="./img/i3.png" alt="">
             <div class="product-name">Artificial Plants</div>
             <div class="product-price">35.000đ</div>
           </div>
           <div class="product">
-            <img src="i4.png" alt="">
+            <img src="./img/i4.png" alt="">
             <div class="product-name">Natural Plants</div>
             <div class="product-price">140.000d</div>
           </div>
           <div class="product">
-            <img src="i5.png" alt="">
+            <img src="./img/i5.png" alt="">
             <div class="product-name">Natural Plants</div>
             <div class="product-price">140.000d</div>
           </div>
           <div class="product">
-            <img src="i6.png" alt="">
+            <img src="./img/i6.png" alt="">
             <div class="product-name">Natural Plants</div>
             <div class="product-price">140.000d</div>
           </div>
@@ -322,7 +91,7 @@ footer{
         <div class="about-list">
           <div class="about">
             <div class="about-img">
-              <img src="about1.png" alt="">
+              <img src="./img/about1.png" alt="">
             </div>
             <h3>Large Assortment</h3>
             <p>we offer many different types of products with fewer variations in each category.</p>
@@ -330,7 +99,7 @@ footer{
 
           <div class="about">
             <div class="about-img">
-              <img src="about2.png" alt="">
+              <img src="./img/about2.png" alt="">
             </div>
             <h3>Fast & Free Shipping</h3>
             <p>4-day or less delivery time, free shipping and an expedited delivery option.</p>
@@ -338,7 +107,7 @@ footer{
 
           <div class="about">
             <div class="about-img">
-              <img src="about3.png" alt="">
+              <img src="./img/about3.png" alt="">
             </div>
             <h3>24/7 Support</h3>
             <p>answers to any business related inquiry 24/7 and in real-time.</p>
@@ -351,17 +120,17 @@ footer{
         <div class="category-container">
           <div class="categories">
             <div class="category-child">
-              <img src="cate1.png" alt="">
+              <img src="./img/cate1.png" alt="">
               <h3>Natural Plants</h3>
             </div>
   
             <div class="category-child">
-              <img src="cate2.png" alt="">
+              <img src="./img/cate2.png" alt="">
               <h3>Plant Accessories</h3>
             </div>
   
             <div class="category-child">
-              <img src="cate3.png" alt="">
+              <img src="./img/cate3.png" alt="">
               <h3>Artificial Plants</h3>
             </div>
           </div>
@@ -380,7 +149,7 @@ footer{
             <div class="card">
               <p class="title">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
               <div class="review">
-                  <img src="avar1.png" alt="">
+                  <img src="./img/avar1.png" alt="">
                   <div class="reviewer-info">
                       <div class="info">
                         <h3 class="name" style="font-size:20px">John Doe</h3>
@@ -397,7 +166,7 @@ footer{
             <div class="card">
               <p class = "title">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
               <div class="review">
-                  <img src="avar2.png" alt="">
+                  <img src="./img/avar2.png" alt="">
                   <div class="reviewer-info">
                     <div class="info">
                       <h3 class="name" style="font-size:20px">John Doe</h3>
