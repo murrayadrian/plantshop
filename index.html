@@ -145,19 +145,21 @@ input{
   font-size: 18px;
   font-weight: 500;
 }
-.sec3{
+.sec3, .sec4{
   text-align: center;
   height:auto;
   background-color: #FFFFFF;
 }
 .about-list{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .about{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 140px;
+  padding: 0px 130px;
 }
 .about-img{
   width:96px;
@@ -174,6 +176,33 @@ h3{
   color: #1E1E1E;
   font-weight: 700;
   font-size: 32px;
+}
+.categories h3{
+  font-size: 14px;
+}
+.sec4 p{
+  margin-bottom:10px;
+}
+.category-container{
+  background-color: #C1DCDC;
+  padding-bottom:15px;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:100px;
+}
+.categories :last-child, .categories :first-child{
+  transform: translateY(-30px);
+}
+.category-bottom{
+  transform: translateY(-50px);
+}
+.sec5{
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 96px;
 }
   </style>
 </head>
@@ -283,11 +312,50 @@ h3{
           </div>
         </div>
       </div>
-      <div class="banner">
-        <p>Categories</p>
+      <div class="banner sec4">
+        <h3>Categories</h3>
+        <p>Find what you are looking for</p>
+        <div class="category-container">
+          <div class="categories">
+            <div class="category-child">
+              <img src="cate1.png" alt="">
+              <h3>Natural Plants</h3>
+            </div>
+  
+            <div class="category-child">
+              <img src="cate2.png" alt="">
+              <h3>Plant Accessories</h3>
+            </div>
+  
+            <div class="category-child">
+              <img src="cate3.png" alt="">
+              <h3>Artificial Plants</h3>
+            </div>
+          </div>
+          <div class="category-bottom">
+            <p>Horem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button style="width:100px;height:50px;background-color: white;">Explore</button>
+          </div>
+        </div>
+        
       </div>
-      <div class="banner">
-        <p>What say?</p>
+      <div class="banner sec5">
+        <div class="question">
+          <h3>What customers say about VinhFarm?</h3>
+        </div>
+        <div class="card-list">
+            <div class="card">
+              <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              <div class="reviewer">
+                  <div class="avatar"></div>
+                  <div class="reviewer-info">
+                      <h3 class="name"></h3>
+                      <p class="flatform"></p>
+                  </div>
+              </div>
+            </div>
+        </div>
+        
       </div>
     </div>
     <footer class="footer">
